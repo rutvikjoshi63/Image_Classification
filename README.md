@@ -4,10 +4,14 @@
 #### 3. [Unsupervised Learning, Recommenders, Reinforcement Learning](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main)
 ## Table Of Contents
 
-  * [Introduction](#1-introduction)
-  * [Skills Developed](#2-skills-developed)
-  * [Projects](#3-projects)
-    + [3.1 K-means Image Compression](#31-K-means-image-compression)
+  * [1. What is Neural Networks](#1-what-is-neural-networks)
+  * [2. Decision Making](#2-decision-making)
+  * [3. Procedure](#3-procedure)
+  * [4. Learnings](#4-learnings)
+  * [5. Additional Notes](#5-additional-notes)
+  * [6. Resources](#6-resources)
+  * [7. Projects](#7-projects)
+    + [7.1 Coffee Roasting at Home](#71-coffee-roasting-at-home)
       - [3.1.1 Code Base](#311-code-base)
       - [3.1.2 Key Points](#312-key-points)
       - [3.1.3 Decision Making](#313-decision-making)
@@ -43,30 +47,44 @@
   * [Resources](#resources)
 
  
-# 1. Introduction
-Having completed DeepLearning.AI's Machine Learning Specialization, I feel empowered with a robust foundation in this transformative field. Professor Ng's masterful guidance expertly navigated the complexities of supervised and unsupervised learning, neural networks, and reinforcement learning.
+# 1. What is Neural Networks
+* A neural network is built from layers of neurons.
+* Each layer takes a vector of inputs and applies a logistic regression unit to each input, producing a vector of outputs.
+* The output of one layer becomes the input for the next layer.
+* A neural network can have multiple hidden layers and one output layer.
+* Superscripts in square brackets denote the layer associated with a quantity (e.g., w^[2] is a parameter in layer 2).
+* Activation functions like sigmoid are used to introduce non-linearity.
+* Forward propagation is an algorithm to compute the output of a neural network for a given input.
 
-The program surpassed mere technical training, delving into industry best practices and ethical considerations, equipping me with a Silicon Valley-caliber approach to AI development. This practical knowledge translates directly into tackling real-world challenges with confidence.
+# 2. Decision Making
+* Choose the number of layers and neurons based on the complexity of the problem.
+* Define the activation function (e.g., sigmoid, tanh).
+* Initialize the weights and biases randomly.
 
-The Specialization provided me with:
-# 2. Skills Developed
-* Solid understanding of foundational machine learning concepts: From linear regression to deep reinforcement learning, I gained a comprehensive grasp of key algorithms and their applications.
-* Hands-on Python skills: Building models using NumPy and scikit-learn solidified my ability to implement these concepts in real-world scenarios.
-* Critical thinking and problem-solving: I learned to approach challenges with a data-driven mindset, employing best practices for model evaluation and performance optimization.
-* Exposure to cutting-edge advancements: The curriculum covered the latest trends in AI, including recommender systems and deep learning, preparing me for the evolving landscape of the field.
+# 3. Procedure
+* For each layer (except the first):
+    + Multiply the input vector by the weight matrix of the current layer.
+    + Add the bias vector for the current layer.
+    + Apply the activation function to each element of the resulting vector.
+* The output of the final layer is the prediction of the neural network.
 
-Overall, the Machine Learning Specialization proved to be an invaluable investment, equipping me with the knowledge and skills to embark on a successful career in AI. I am grateful to Professor Ng and the DeepLearning.AI team for crafting such a comprehensive and impactful learning experience.
+# 4. Learnings
+* Neural networks are powerful models for complex tasks.
+* Understanding the forward propagation algorithm is crucial for using neural networks.
+* Notation can be complex but helps with understanding the computations.
 
-Looking forward to: Utilizing my newfound expertise to contribute to meaningful AI solutions that address real-world problems and shape the future.
-
-# Resources:
-
+# 5. Additional Notes
+* Backward propagation is used to train the neural network by adjusting the weights and biases.
+* Hyperparameter tuning involves adjusting parameters like the learning rate.
+* Regularization techniques can help prevent overfitting.
+  
+# 6. Resources
 DeepLearning.AI: https://www.deeplearning.ai/
 Stanford Online: https://online.stanford.edu/
 Andrew Ng: https://www.youtube.com/watch?v=779kvo2dxb4
 
-# 3. Projects
-## 3.1 K-means Image Compression
+# 7. Projects
+## 7.1 Coffee Roasting at Home
 This project was a hands-on introduction to compressing images using K-means clustering to reduce file size while maintaining visual quality.
 
 ### 3.1.1 [Code Base](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression)

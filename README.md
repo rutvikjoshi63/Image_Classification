@@ -1,6 +1,6 @@
 # Machine Learning Specialization : Advanced Learning Algorithms
 #### 1. [Supervised Machine Learning: Regression and Classification](https://github.com/rutvikjoshi63/Student-admission-prediction)
-## 2. [Advanced Learning Algorithms](https://github.com/rutvikjoshi63/Image_Classification)
+## 2. Advanced Learning Algorithms
 #### 3. [Unsupervised Learning, Recommenders, Reinforcement Learning](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main)
 ## Table Of Contents
 

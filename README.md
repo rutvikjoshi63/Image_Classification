@@ -12,12 +12,16 @@
   * [6. Resources](#6-resources)
   * [7. Projects](#7-projects)
     + [7.1 Coffee Roasting at Home](#71-coffee-roasting-at-home)
-      - [3.1.1 Code Base](#311-code-base)
-      - [3.1.2 Key Points](#312-key-points)
-      - [3.1.3 Decision Making](#313-decision-making)
-      - [3.1.4 Procedure](#314-procedure)
-      - [3.1.5 Learnings](#315-learnings)
-      - [3.1.6 Additional Tips](#316-additional-tips)
+      - [7.1.1 Code Base - Tensorflow](#711-code-base-tensorflow)
+        - [7.1.1.2 DataSet](#7112-dataSet)
+        - [7.1.1.3 Tensorflow Model](#7113-tensorflow-model)
+        - [7.1.1.4 Layer Functions](#7114-layer-functions)
+      - [7.1.2  Code Base - Numpy](#712-code-base-numpy)
+        - [7.1.2.2 DataSet](#7122-dataSet)
+        - [7.1.2.3 Numpy Model](#7123-numpy-model)
+        - [7.1.2.4 Predictions](#7124-predictions)
+        - [7.1.2.5 Network Function](#7125-network-function)
+      
     + [3.2 Anomaly Detection](#32-anomaly-detection)
       - [3.2.1 Code Base](#321-code-base)
       - [3.2.2 Key Points](#312-key-points)
@@ -85,7 +89,7 @@ Andrew Ng: https://www.youtube.com/watch?v=779kvo2dxb4
 
 # 7. Projects
 ## 7.1 Coffee Roasting at Home
-### 7.1.1.1 [Code Base - Tensorflow](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression)
+### 7.1.1 [Code Base - Tensorflow](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression)
 This lab demonstrates how to build a small neural network using Tensorflow to classify coffee roasting data based on temperature and duration features1.
 ### **7.1.1.2 DataSet**
 The lab uses a dataset of 200 examples of coffee roasting with labels indicating good or bad roasts. The data is normalized and tiled to increase the training set size and reduce the number of training epochs2.
@@ -94,7 +98,7 @@ The lab shows how to create a sequential model with two dense layers and sigmoid
 ### **7.1.1.4 Layer Functions**
 The lab visualizes the output of each layer and unit in the network and explains their role in the decision making process. The lab also shows how to make predictions using the trained model and apply a threshold to obtain binary decisions.
 
-### 7.1.2.1 [Code Base - Numpy](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression)
+### 7.1.2 [Code Base - Numpy](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression)
 This lab teaches how to build a small neural network using Numpy. The network has two layers with sigmoid activations and is trained to classify coffee roasting data.
 ### **7.1.2.2 DataSet**
 The data set contains two features: temperature and duration of roasting. The label is whether the roast is good or not. The data is normalized before feeding to the network.

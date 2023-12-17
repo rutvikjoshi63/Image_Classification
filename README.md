@@ -29,13 +29,13 @@
       - [7.2.4 Procedure](#724-procedure)
       - [7.2.5 Learnings](#725-learnings)
       - [7.2.6 Additional Tips](#726-additional-tips)
-    + [3.3 Collaborative Filtering](#33-collaborative-filtering)
-      - [3.3.1 Code Base ](#331-code-base)
-      - [3.3.2 Key Points](#332-key-points)
-      - [3.3.3 Decision Making](#333-decision-making)
-      - [3.3.4 Procedure](#334-procedure)
-      - [3.3.5 Learnings](#335-learnings)
-      - [3.3.6 Additional Tips](#336-additional-tips)
+    + [7.3 Multiclass Classification](#73-multiclass-classification)
+      - [7.3.1 Code Base ](#731-code-base)
+      - [7.3.2 Key Points](#732-key-points)
+      - [7.3.3 Decision Making](#733-decision-making)
+      - [7.3.4 Procedure](#734-procedure)
+      - [7.3.5 Learnings](#735-learnings)
+      - [7.3.6 Additional Tips](#736-additional-tips)
     + [3.4 Content-based filtering](#34-content-based-filtering)
       - [3.4.1 Code Base ](#341-code-base)
       - [3.4.2 Key Points](#342-key-points)
@@ -135,4 +135,36 @@ This project was a hands-on introduction to using a neural network to recognize 
 ### **7.2.6 Additional Tips**
 * Optional lectures on vectorization and broadcasting for code efficiency and readability.
 * Links to external resources for further learning.
-    
+
+## 7.3 Multiclass Classification
+This project was a hands-on introduction to using a neural network to recognize the hand-written digits from zero and nine.
+
+### 7.3.1 [Code Base](https://github.com/rutvikjoshi63/Image_Classification/tree/main/MultiClassClassification)
+### **7.3.2 Key Points**
+* Multi-class classification involves predicting one out of multiple possible output labels, unlike binary classification which only has two options.
+* Handwritten digit recognition with 10 digits is an example of multi-class classification.
+* Softmax regression generalizes logistic regression to handle multiple output classes. It calculates the probability of each class for a given input, using a function that outputs values between 0 and 1 and sums to 1.
+* A neural network can be used for multi-class classification by adding a softmax output layer with one unit per class. The output layer calculates the probability of each class for an input.
+* The cost function for softmax regression uses negative log-likelihood to penalize the model for incorrect predictions. This encourages the model to output higher probabilities for the correct class.
+* There are two ways to implement softmax in TensorFlow: the original way from the video and a more numerically stable way recommended for better accuracy.
+* Multi-label classification is different from multi-class classification. In multi-label, each input can have multiple labels associated with it, while in multi-class, each input has only one label.
+### **7.3.3 Decision Making**
+* Choose multi-class classification if your problem involves predicting one out of several possible categories.
+* Use softmax regression and a neural network with a softmax output layer to build a model for multi-class classification.
+* Use the recommended numerically stable implementation of softmax in TensorFlow for better accuracy.
+* Consider multi-label classification if your problem involves predicting multiple labels for each input.
+### **7.3.4 Procedure**
+* Define the problem as multi-class classification and identify the number of possible output classes.
+* Prepare your data set labeled with the corresponding class for each input.
+* Choose a neural network architecture with a softmax output layer and one unit per class.
+* Train the network using the softmax cost function and backpropagation algorithm.
+* Evaluate the model's performance on a separate test set.
+### **7.3.5 Learnings**
+* Softmax regression is a powerful tool for multi-class classification.
+* Neural networks can be effectively used for multi-class classification with a softmax output layer.
+* Numerical stability is important when implementing softmax in TensorFlow.
+* Multi-label classification is a distinct problem with different modeling approaches.
+### **7.3.6 Additional Tips**
+* This summary covers the main points from the videos on multi-class and multi-label classification.
+* There are additional details and variations not included here.
+* Consider watching the full videos for a more comprehensive understanding.

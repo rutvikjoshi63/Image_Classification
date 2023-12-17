@@ -3,7 +3,6 @@
 ## 2. Advanced Learning Algorithms
 #### 3. [Unsupervised Learning, Recommenders, Reinforcement Learning](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main)
 ## Table Of Contents
-
   * [1. What is Neural Networks](#1-what-is-neural-networks)
   * [2. Decision Making](#2-decision-making)
   * [3. Procedure](#3-procedure)
@@ -21,7 +20,6 @@
         - [7.1.2.3 Numpy Model](#7123-numpy-model)
         - [7.1.2.4 Predictions](#7124-predictions)
         - [7.1.2.5 Network Function](#7125-network-function)
-      
     + [7.2 Binary Classification](#72-binary-classification)
       - [7.2.1 Code Base](#721-code-base)
       - [7.2.2 Key Points](#712-key-points)
@@ -36,18 +34,6 @@
       - [7.3.4 Procedure](#734-procedure)
       - [7.3.5 Learnings](#735-learnings)
       - [7.3.6 Additional Tips](#736-additional-tips)
-    + [3.4 Content-based filtering](#34-content-based-filtering)
-      - [3.4.1 Code Base ](#341-code-base)
-      - [3.4.2 Key Points](#342-key-points)
-      - [3.4.3 Decision Making](#343-decision-making)
-      - [3.4.4 Procedure](#344-procedure)
-      - [3.4.5 Learnings](#345-learnings)
-      - [3.4.6 Additional Tips](#346-additional-tips)
-    + [3.5 Land Lunar Lander on landing pad](#35-land-lunar-lander-on-landing-pad)
-      - [3.5.1 Code Base ](#351-code-base)
-      - [3.5.2 Procedure](#352-procedure)
-      - [3.5.3 Learnings](#353-learnings)
-
   * [Resources](#resources)
 
  

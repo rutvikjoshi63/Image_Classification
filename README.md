@@ -22,13 +22,13 @@
         - [7.1.2.4 Predictions](#7124-predictions)
         - [7.1.2.5 Network Function](#7125-network-function)
       
-    + [3.2 Anomaly Detection](#32-anomaly-detection)
-      - [3.2.1 Code Base](#321-code-base)
-      - [3.2.2 Key Points](#312-key-points)
-      - [3.2.3 Decision Making](#313-decision-making)
-      - [3.2.4 Procedure](#324-procedure)
-      - [3.2.5 Learnings](#325-learnings)
-      - [3.2.6 Additional Tips](#326-additional-tips)
+    + [7.2 Binary Classification](#72-binary-classification)
+      - [7.2.1 Code Base](#721-code-base)
+      - [7.2.2 Key Points](#712-key-points)
+      - [7.2.3 Decision Making](#713-decision-making)
+      - [7.2.4 Procedure](#724-procedure)
+      - [7.2.5 Learnings](#725-learnings)
+      - [7.2.6 Additional Tips](#726-additional-tips)
     + [3.3 Collaborative Filtering](#33-collaborative-filtering)
       - [3.3.1 Code Base ](#331-code-base)
       - [3.3.2 Key Points](#332-key-points)
@@ -89,7 +89,7 @@ Andrew Ng: https://www.youtube.com/watch?v=779kvo2dxb4
 
 # 7. Projects
 ## 7.1 Coffee Roasting at Home
-### 7.1.1 [Code Base - Tensorflow](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression)
+### 7.1.1 [Code Base - Tensorflow](https://github.com/rutvikjoshi63/Image_Classification/tree/main/CoffeeRoasting/Files)
 This lab demonstrates how to build a small neural network using Tensorflow to classify coffee roasting data based on temperature and duration features1.
 ### **7.1.1.2 DataSet**
 The lab uses a dataset of 200 examples of coffee roasting with labels indicating good or bad roasts. The data is normalized and tiled to increase the training set size and reduce the number of training epochs2.
@@ -98,7 +98,7 @@ The lab shows how to create a sequential model with two dense layers and sigmoid
 ### **7.1.1.4 Layer Functions**
 The lab visualizes the output of each layer and unit in the network and explains their role in the decision making process. The lab also shows how to make predictions using the trained model and apply a threshold to obtain binary decisions.
 
-### 7.1.2 [Code Base - Numpy](https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression)
+### 7.1.2 [Code Base - Numpy](https://github.com/rutvikjoshi63/Image_Classification/tree/main/CoffeeRoasting/Files)
 This lab teaches how to build a small neural network using Numpy. The network has two layers with sigmoid activations and is trained to classify coffee roasting data.
 ### **7.1.2.2 DataSet**
 The data set contains two features: temperature and duration of roasting. The label is whether the roast is good or not. The data is normalized before feeding to the network.
@@ -110,11 +110,29 @@ The lab shows how to use the trained model to make predictions on new examples. 
 The lab plots the output of the network as a function of the input features. The plot shows the regions where the network predicts a good or a bad roast. The plot is identical to the one obtained using Tensorflow in the previous lab.
 
 
-### **3.1.5 Learnings**
-  * K-means offers a simple yet effective approach to image compression.
-  * Choosing k, handling lossy nature, and minimizing artifacts require careful consideration.
-  * Advanced algorithms and understanding human perception can unlock further optimization.
-### **3.1.6 Additional Tips**
-  * Advanced Clustering Algorithms: Exploring techniques like fuzzy c-means, which allow pixels to belong to multiple clusters with varying degrees of membership, can lead to more nuanced and potentially higher-quality compression.
-  * Human Perception and Quality Metrics: Understanding how the human eye perceives color variations and artifacts is crucial for optimizing K-means performance and developing effective quality assessment metrics.
+## 7.2 Binary Classification
+This project was a hands-on introduction to using a neural network to recognize the hand-written digits zero and one.
+
+### 7.2.1 [Code Base](https://github.com/rutvikjoshi63/Image_Classification/tree/main/BinaryClassification)
+### **7.2.2 Key Points**
+* Uses a 3-layer neural network with sigmoid activations to distinguish handwritten digits '0' and '1'.
+* TensorFlow and NumPy code examples demonstrate model implementation and prediction.
+### **7.2.3 Decision Making**
+* Decisions on model architecture, the activation function, the loss function, the optimizer, and the metrics based on the characteristics of the binary classification task and the data set(1000 20x20 grayscale images). 
+* Random seed ensures result reproducibility.
+### **7.2.4 Procedure**
+* Load and visualize the data set, which contains 1000 examples of 20x20 grayscale images of digits zero and one3.
+* Define the model using TensorFlow’s Sequential and Dense classes, specifying the input shape, the number of units, and the activation function for each layer.
+* Compile the model using TensorFlow’s compile method, specifying the loss function, the optimizer, and the metrics to track.
+* Train the model using TensorFlow’s fit method, specifying the number of epochs, the batch size, and the validation split.
+* Test the model using TensorFlow’s evaluate and predict methods, comparing the predictions with the labels and calculating the accuracy.
+* Implement the same model using NumPy, defining custom functions for the dense layer, the sigmoid activation, and the forward propagation.
+* Compare the predictions from the TensorFlow and NumPy models, verifying that they are identical.
+### **7.2.5 Learnings**
+* Building and evaluating neural networks for binary classification tasks.
+* Implementing and testing models using TensorFlow and NumPy.
+* Comparing different model implementations.
+### **7.2.6 Additional Tips**
+* Optional lectures on vectorization and broadcasting for code efficiency and readability.
+* Links to external resources for further learning.
     
